@@ -1,8 +1,6 @@
 const moon = document.getElementById('moon');
 const planet = document.getElementById('planet');
 
-planet.classList.add('move');
-
 function getPosition(body) { // use this to get position of moon and planet
     const rect = body.getBoundingClientRect();
     const x = rect.left;
