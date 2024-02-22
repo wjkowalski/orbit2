@@ -5,10 +5,9 @@ function getXOf(body) { // use this to get position of moon and planet
     const x = rect.left;
     return (x);
 }
-
-let moonPos = getXOf(moon);
-let planetPos = getXOf(planet);
-let distance = planetPos - moonPos;
+let moonX = getXOf(moon);
+let planetX = getXOf(planet);
+let distance = planetX - moonX;
 let stopAnimation = false;
 let styles = window.getComputedStyle(moon); // figure out where moon is at any moment
 let i = 0;
