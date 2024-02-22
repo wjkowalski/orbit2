@@ -13,16 +13,16 @@ let styles = window.getComputedStyle(moon); // figure out where moon is at any m
 let i = 0;
 function animateMoon() {
     if(!stopAnimation){
-        currentX = Math.floor(getPosition(moon));
+        currentX = Math.floor(getXOf(moon));
         if (i === 0){
-            startingX = getPosition(moon); // get value of X at beginning of orbit
+            startingX = getXOf(moon); // get value of X at beginning of orbit
         }
         i++;
         requestAnimationFrame(animate);
-        let moonPos = getPosition(moon);
-        let planetPos = getPosition(planet);
-        let distance = Math.floor(planetPos - moonPos);
-        console.log(distance);
+        // let moonPos = getPosition(moon);
+        // let planetPos = getPosition(planet);
+        // let distance = Math.floor(planetPos - moonPos);
+        // console.log(distance);
         if (distance > 150){
             moon.style.zIndex = '10';
         }
@@ -31,6 +31,5 @@ function animateMoon() {
         }
     }
 }
-
 animateMoon();
 
