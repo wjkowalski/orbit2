@@ -1,3 +1,3 @@
 # orbit
-Demo of a planet orbiting a sun, with vanilla everything
+Moon and planet with hint of superstar in upper right corner
 # orbit2
