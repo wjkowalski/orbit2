@@ -1,13 +1,13 @@
 const moon = document.getElementById('moon');
 const planet = document.getElementById('planet');
-function getPosition(body) { // use this to get position of moon and planet
+function getXOf(body) { // use this to get position of moon and planet
     const rect = body.getBoundingClientRect();
     const x = rect.left;
     return (x);
 }
 
-let moonPos = getPosition(moon);
-let planetPos = getPosition(planet);
+let moonPos = getXOf(moon);
+let planetPos = getXOf(planet);
 let distance = planetPos - moonPos;
 let stopAnimation = false;
 let styles = window.getComputedStyle(moon); // figure out where moon is at any moment
