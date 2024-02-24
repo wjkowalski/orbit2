@@ -11,8 +11,7 @@ function animate() {
         let moonX = getXOf(moon);
         let planetX = getXOf(planet);
         let distance = Math.floor(planetX - moonX);
-        console.log(distance);
-        if (distance > 150){
+        if (distance > 100){
             moon.style.zIndex = '10';
         }
         if (distance < -175 ) {
