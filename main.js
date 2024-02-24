@@ -8,10 +8,9 @@ function getXOf(body) { // use this to get position of moon and planet
 let moonX = getXOf(moon);
 let planetX = getXOf(planet);
 let distance = planetX - moonX;
-let stopAnimation = false;
 let i = 0;
 function animate() {
-    if(!stopAnimation){
+    if(true){
         currentX = Math.floor(getXOf(moon));
         if (i === 0){
             startingX = getXOf(moon); // get value of X at beginning of orbit
