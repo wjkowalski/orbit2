@@ -15,12 +15,12 @@
     box-shadow: -15px 15px 25px #333;
 }
 
-.move {
+/* .move {
     box-sizing: border-box;
     height: 10rem;
     width: 10rem;
 }
-
+ */
 #moon {
     border-radius: 50%;
     top: 3rem;
